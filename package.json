@@ -34,6 +34,26 @@
 				"command": "simple-case.simpleCase.toggleCase",
 				"title": "Simple Case Toggle"
 			}
+		],
+		"keybindings": [
+			{
+				"command": "simple-case.simpleCase.lowerCase",
+				"key": "alt-u",
+				"mac": "alt-u",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "simple-case.simpleCase.upperCase",
+				"key": "shift+alt+u",
+				"mac": "shift+alt+u",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "simple-case.simpleCase.toggleCase",
+				"key": "alt+t",
+				"mac": "alt+t",
+				"when": "editorTextFocus"
+			}
 		]
 	},
 	"scripts": {
