@@ -14,15 +14,16 @@ export function activate(context: vscode.ExtensionContext) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	let commandsDisposable   = vscode.commands.registerTextEditorCommand('simple-case.simpleCase.commands', simpleCaseCommands);
-	let lowerCaseDisposable  = vscode.commands.registerTextEditorCommand('simple-case.simpleCase.lowerCase', (textEditor, edit) => runCommand(COMMAND_LABELS.lowerCase, textEditor, edit));
-	let upperCaseDisposable  = vscode.commands.registerTextEditorCommand('simple-case.simpleCase.upperCase', (textEditor, edit) => runCommand(COMMAND_LABELS.upperCase, textEditor, edit));
-	let toggleCaseDisposable = vscode.commands.registerTextEditorCommand('simple-case.simpleCase.toggleCase', (textEditor, edit) => runCommand(COMMAND_LABELS.toggleCase, textEditor, edit));
-
 	[
-		commandsDisposable, lowerCaseDisposable, upperCaseDisposable, toggleCaseDisposable
+		{ command: 'simple-case.simpleCase.commands', func: simpleCaseCommands },
+		{ command: 'simple-case.simpleCase.lowerCase', func: (textEditor: vscode.TextEditor, edit: vscode.TextEditorEdit) => runCommand(COMMAND_LABELS.lowerCase, textEditor, edit) },
+		{ command: 'simple-case.simpleCase.upperCase', func: (textEditor: vscode.TextEditor, edit: vscode.TextEditorEdit) => runCommand(COMMAND_LABELS.upperCase, textEditor, edit) },
+		{ command: 'simple-case.simpleCase.toggleCase', func: (textEditor: vscode.TextEditor, edit: vscode.TextEditorEdit) => runCommand(COMMAND_LABELS.toggleCase, textEditor, edit) }
 	].forEach(
-		d => context.subscriptions.push(d)
+		i => {
+			let d = vscode.commands.registerTextEditorCommand(i.command, i.func);
+			context.subscriptions.push(d);
+		}
 	);
 }
 
