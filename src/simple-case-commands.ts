@@ -28,7 +28,7 @@ export function simpleCaseCommands(textEditor: vscode.TextEditor, edit: vscode.T
         .then(command => runCommand(command?.label ?? '', textEditor, edit));
 }
 
-export function runCommand(commandLabel: string, textEditor: vscode.TextEditor, edit: vscode.TextEditorEdit) {
+export function runCommand(commandLabel: string, textEditor: vscode.TextEditor, edit: vscode.TextEditorEdit): void {
     const commandDefinition = COMMAND_DEFINITIONS.filter(c => c.label === commandLabel)[0];
     if (!commandDefinition) {
         return;

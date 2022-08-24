@@ -38,8 +38,8 @@
 		"keybindings": [
 			{
 				"command": "simple-case.simpleCase.lowerCase",
-				"key": "alt-u",
-				"mac": "alt-u",
+				"key": "alt+u",
+				"mac": "alt+u",
 				"when": "editorTextFocus"
 			},
 			{
