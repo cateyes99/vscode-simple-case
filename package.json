@@ -2,6 +2,7 @@
 	"name": "simple-case",
 	"displayName": "Simple Case",
 	"description": "Toggle between upper & lower cases.",
+	"publisher": "cateyes99",
 	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.65.0"
@@ -56,6 +57,20 @@
 			}
 		]
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cateyes99/vscode-simple-case.git"
+	},
+	"author": {
+		"name": "XU Zhaofeng",
+		"email": "xuzf@hotmial.com",
+		"url": "https://github.com/cateyes99"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/cateyes99/vscode-simple-case/issues"
+	},
+	"homepage": "https://github.com/cateyes99/vscode-simple-case#readme",
 	"scripts": {
 		"vscode:prepublish": "npm run esbuild-base -- --minify",
 		"compile": "tsc -p ./",
