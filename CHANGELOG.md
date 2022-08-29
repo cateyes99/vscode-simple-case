@@ -1,9 +1,8 @@
 # Change Log
 
-All notable changes to the "simple-case" extension will be documented in this file.
+## 1.0.1 (2022-08-29)
+- Added an icon for this extension.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 1.0.0 (2022-08-28)
 
-## [Unreleased]
-
-- Initial release
+- Initial release to the VS Code marketplace.

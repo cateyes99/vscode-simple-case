@@ -2,8 +2,9 @@
 	"name": "simple-case",
 	"displayName": "Simple Case",
 	"description": "Toggle between upper & lower cases.",
+	"icon": "images/SimpleCaseIcon.png",
 	"publisher": "cateyes99",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
 		"vscode": "^1.65.0"
 	},

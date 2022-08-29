@@ -18,9 +18,3 @@ There are two ways to use the functionality provided by this extension.
 
 - Here is a demo showing all `Simple Case` commands.
 ![Simple Case Toggle](images/SimpleCaseListCommandsDemo.gif)
-
-## Release Notes
-
-### 1.0.0
-
-Initial release of Simple Case Extension.
