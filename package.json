@@ -1,7 +1,7 @@
 {
 	"name": "simple-case",
 	"displayName": "Simple Case",
-	"description": "Toggle between upper & lower cases.",
+	"description": "Toggle between upper & lower cases seamlessly.",
 	"icon": "images/SimpleCaseIcon.png",
 	"publisher": "cateyes99",
 	"version": "1.0.2",
