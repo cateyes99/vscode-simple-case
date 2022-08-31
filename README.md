@@ -1,6 +1,6 @@
 # Simple Case Extension for VS Code
 
-This extension allows you to quickly transform the charactors or selected texts. If there is no selection, the char after cursor will  be transformed, and the cursor will advance itself after the trasnformation to enable the seamless trasnformation process which is the main purpose motivating me to create this extension different from the built-in `Transform to Lowercase/Uppercase` command. This extension supports multiple cursors and multiple selections.
+This extension allows to quickly transform the charactors or selected texts. If there is no selection, the char after cursor will  be transformed, and the cursor will advance itself after the trasnformation to enable the seamless continuous trasnformation process which is the main purpose motivating me to create this extension, and my response to the [issue](https://github.com/microsoft/vscode/issues/63377) I raised for VS Code. This extension supports multiple cursors and multiple selections.
 
 ## Commands
 - `Simple Case Commands`: List all Simple Case commands.
