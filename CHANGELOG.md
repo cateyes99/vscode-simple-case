@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.0.5 (2022-10-09)
+Downgrade the dependency on VSCode to 1.39.0
+
 ## 1.0.4 (2022-10-01)
 Downgrade the dependency on VSCode to 1.63.2
 
