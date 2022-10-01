@@ -4,7 +4,7 @@
 	"description": "Toggle between upper & lower cases seamlessly.",
 	"icon": "images/SimpleCaseIcon.png",
 	"publisher": "cateyes99",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"engines": {
 		"vscode": "^1.63.2"
 	},

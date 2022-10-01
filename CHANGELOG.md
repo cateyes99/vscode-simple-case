@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.0.4 (2022-10-01)
+Downgrade the dependency on VSCode to 1.63.2
+
 ## 1.0.3 (2022-09-01)
 - Update **package.json** & **README.md**
 
