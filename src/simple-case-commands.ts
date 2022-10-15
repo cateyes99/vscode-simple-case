@@ -121,6 +121,8 @@ function toggleCase(str: string): string | undefined {
 
 // https://stackoverflow.com/a/62032796
 // https://www.regular-expressions.info/unicode.html#prop
+/*
 function isLetter(str: string): boolean {
     return RegExp(/^\p{L}/, 'u').test(str);
 }
+ */
