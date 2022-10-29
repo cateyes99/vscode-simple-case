@@ -25,7 +25,8 @@ export function simpleCaseCommands(textEditor: vscode.TextEditor, edit: vscode.T
     }));
 
     vscode.window.showQuickPick(items)
-        .then(command => runCommand(command?.label ?? '', textEditor, edit));
+    // `command == null`, check if it is either null or underfined. See https://github.com/lodash/lodash/blob/master/isNil.js#L20
+    .then(command => runCommand(command == null || command.label == null ? '' : command.label, textEditor, edit));
 }
 
 export function runCommand(commandLabel: string, textEditor: vscode.TextEditor, edit: vscode.TextEditorEdit): void {
